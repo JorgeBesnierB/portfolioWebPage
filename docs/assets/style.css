@@ -1,0 +1,35 @@
+:root {
+  /* JBE:Base Color pallet for web page. */
+  --primaryColor: #112B3C;
+  --secundaryColor: #205375;
+  --alertColor: #F66B0E;
+  --baseColor: #EFEFEF;
+  --blur: 10px;
+}
+
+body{
+    background-color: var(--baseColor);
+    width: 100%;
+}
+
+header{
+    background-color: var(--primaryColor);
+    color:  var(--baseColor);
+}
+
+nav{
+    display: inline-block;
+    list-style-type: none;
+}
+header.nav.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+header.nav.ul.li{
+    float: left;
+}
+
