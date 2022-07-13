@@ -1,3 +1,7 @@
+/* ############################################################### */
+/* Variables, and global Styles Properites */
+/* ############################################################### */
+
 :root {
   /* JBE:Base Color pallet for web page. */
   --primaryColor: #112B3C;
@@ -8,28 +12,324 @@
 }
 
 body{
+    padding: 0%;
+    padding-top: 70px;
+    margin: 0%;
     background-color: var(--baseColor);
-    width: 100%;
+    text-align: justify;
 }
 
-header{
+img{
+    width: 120px;
+    height: 120px;
+}
+a:hover {
+    background-color: lightblue;
+  }
+.item:hover{
+    background-color: lightblue;
+}
+
+/* ############################################################### */
+/* Header Styles */
+/* ############################################################### */
+
+.headStyle{
+    padding: 0%;
+    margin: 0%;
+    width:100%; 
+    top: 0%;
     background-color: var(--primaryColor);
     color:  var(--baseColor);
+    position: fixed;
+    z-index: 950;
+    max-height: 20%;
 }
 
-nav{
-    display: inline-block;
-    list-style-type: none;
-}
-header.nav.ul {
-    list-style-type: none;
-    margin: 0;
+.headStyle nav {
+    align-items: center;
     padding: 0;
-    overflow: hidden;
-    background-color: #333333;
+    width:95%; 
 }
 
-header.nav.ul.li{
-    float: left;
+.headStyle  a{
+    color: white;
+    text-decoration: none;  
 }
 
+.headStyle ul {
+    position: fixed;
+    right: 5%;
+    list-style-type: none;
+    top: 2%;
+}
+
+.headStyle li{
+    display: inline-block;
+    margin-left: 0.5cm;
+}
+
+/* ############################################################### */
+/* Banner Styles */
+/* ############################################################### */
+#banner {
+        padding: 0%;
+        margin: 0%;
+        width:100%; 
+        z-index: 900;
+        resize: none;
+}
+#banner img{ 
+    padding: 0%;
+    margin: 0%;
+    width:100%; 
+    height: 400px;
+    object-fit: fill;
+    position: relative;
+}
+#banner h2 {
+    padding: 0%;
+    margin: 0%;
+    width:100%; 
+    background-color: var(--alertColor);
+    color:  var(--baseColor);
+    text-align: center;
+}
+/* ############################################################### */
+/* about Styles */
+/* ############################################################### */
+#about{
+    padding: 0%;
+    margin: 0%;
+    width:100%;
+    display: flex;
+    
+}
+/* ############################################################### */
+/* portfolio Styles */
+/* ############################################################### */
+#portfolio{
+    padding: 0%;
+    margin: 0%;
+    width:100%;
+    display: flex;
+}
+/* ############################################################### */
+/* Mini Styles */
+/* ############################################################### */
+#miniprojects{
+    padding: 0%;
+    margin: 0%;
+    width:100%;
+    display: flex;
+}
+
+/* ############################################################### */
+/* Shared Styles classes */
+/* ############################################################### */
+.titleAbout{
+    margin: 0;
+    bottom: 50%;
+    padding: 0%;
+    margin: 1%;
+    display:inline-block;
+    --border-style: solid;
+    width: 20%;
+}
+
+.titlePar{
+    padding: 0%;
+    margin: 1%;
+    display:inline-block;
+    --border-style: solid;
+    width: 78%;
+}
+
+.titleAbout h2{
+        padding-top: 1.5%;
+        padding-right: 10%;
+        text-align: right;
+}
+
+#proyectsIcons{
+    padding: 0%;
+    margin: 0%;
+    width:100%;
+    display: flex;
+    min-width: 70%;
+    align-items: center;
+}
+.item img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+}
+.item h3{
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+}
+.item p{
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+}
+
+
+
+/* ############################################################### */
+/* Mini projects classes */
+/* ############################################################### */
+#miniImg{
+    padding: 0%;
+    margin: 0%;
+    width:100%; 
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+}
+
+
+/* ############################################################### */
+/* Mini projects classes */
+/* ############################################################### */
+#footer {
+    padding: 0%;
+    margin: 0%;
+    width:100%; 
+    z-index: 900;
+    resize: none;
+}
+
+#footer h3 {
+    padding: 0%;
+    margin: 0%;
+    margin-left: 1%;
+    width:100%; 
+    background-color: var(--alertColor);
+    color:  var(--baseColor);
+    text-align: left;
+}
+
+#footer ul {
+    list-style-type: none;
+}
+
+#footer li{
+    display: inline-block;
+    width: 20%;
+}
+
+#footer  a{
+    color: gray;
+    text-decoration: none;  
+}
+
+
+ /* ############################################################### */
+/* classes to adjust size */
+/* ############################################################### */ 
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    .headStyle{
+        background-color: var(--secundaryColor);
+        color:  var(--baseColor);
+    }
+    #banner h2 {
+        background-color: var(--primaryColor);
+        color:  var(--baseColor);
+        text-align: center;
+    }
+    #about{
+        display:list-item;
+        
+    }
+    #portfolio{
+        display:list-item;
+    }
+    #miniprojects{
+        display:list-item;
+    }
+    .titleAbout{
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+        background-color: #205375;
+    }
+    .titlePar{
+        width: 90%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .titleAbout h2{
+        text-align: left;
+        padding-left: 4%;
+        color: white;
+    }
+    .item{
+        width: 25%;
+    }
+    #miniProject h3{
+        text-align: left;
+        padding-left: 4%;
+        color: white;
+    }
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    .headStyle{
+        background-color: var(--alertColor);
+        color:  var(--baseColor);
+    }
+    #banner h2 {
+        background-color: var(--primaryColor);
+        color:  var(--baseColor);
+        text-align: center;
+    }
+    #about{
+        display:list-item;
+        
+    }
+    #portfolio{
+        display:list-item;
+    }
+    #miniprojects{
+        display:list-item;
+    }
+    .titleAbout{
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+        background-color: var(--baseColor);
+    }
+    .titlePar{
+        width: 90%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .titleAbout h2{
+        text-align: center;
+        padding-left: 4%;
+        color: black;
+    }
+    .titlePar p{
+        text-align: center;
+        padding-left: 4%;
+        color: black;
+    }
+    .item{
+        width: 25%;
+    }
+    #miniProject h3{
+        text-align: center;
+        padding-left: 4%;
+        color: black;
+    }
+  }

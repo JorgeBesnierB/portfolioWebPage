@@ -10,89 +10,99 @@
 
     <body>
         <!-- JBE: Main section for menue -->
-        <header>
-            <h1>Jorge Besnier Porfolio</h1>
+        <header class="headStyle">
+            <h1>Jorge Besnier</h1>
             <nav>
                 <ul>
-                    <li>About Me</li>
-                    <li>Porfolio</li>
-                    <li>Mini Projects</li>
-                    <li>Resume</li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Porfolio</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
-        <body>
+        <main>
             <!-- JBE: Cool banner image. -->
-            <section>
-                <img src="" alt="">
-                <H2>New to Software Devleopment</H2>
+            <section id="banner">
+                <img src="./docs/imgs/intro.webp" alt="cool photo of all fullstack tech">
+                <H2>Hi, I'm new to Software Devleopment!!!</H2>
             </section>
 
             <!-- JBE: "about me section" -->
-            <section>
-                <!-- JBE: left side section -->
-                <h2>About Me!</h2>
+            <section id="about">
+                 <!-- JBE: left side section -->
+                <div class="titleAbout">
+                    <h2>About Me!</h2>
+                </div>
                 <!-- JBE: right side section -->
-                <p>Currently developing in the Industrial Automation business unit in Schneider Electric, working in the team of ProLeit MX. I’m working as a Manufacturing Execution Systems Junior Engineer, which the main functions are related to Customer Projects & Services, and Customer Projects Execution.
-                    My day to day is very active, as a work in internal challenges, and develop solutions for clients that connect the core business operations with the management, and executive levels of our client business using ProLeit’s proprietary software.</p>
+                <div class="titlePar">
+                    <p>Currently developing in the Industrial Automation business unit in Schneider Electric, working in the team of ProLeit MX. </p>
+                    <p>I’m working as a Manufacturing Execution Systems Junior Engineer, which the main functions are related to Customer Projects & Services, and Customer Projects Execution.</p>
+                    <p>My day to day is very active, as a work in internal challenges, and develop solutions for clients that connect the core business operations with the management, and executive levels of our client business using ProLeit’s proprietary software.</p>  
                 </div>
             </section>
 
             <!-- JBE: "Portfolio section" -->
-            <section>
+            <section id="portfolio">
                  <!-- JBE: left side section -->
-                <h2>Work by Me!</h2>
-                <section>
-                    <!-- JBE: Basic HTML  -->
-                    <div>
-                        <h3>Basic HTML</h3>
-                        <p>Code refactoring</p>
-                        <img src="./docs/imgs/html.png" alt="HTML Insignia">
-                    </div>
+                 <div class="titleAbout">
+                    <h2>Work by Me!</h2>
+                </div>
+                <div class="titlePar">
+                    <section id="proyectsIcons">
+                        <!-- JBE: Basic HTML  -->
+                        <div class="item">
+                            <h3>Basic HTML</h3>
+                            <p>Code refactoring</p>
+                            <a href="https://jorgebesnierb.github.io/CodeRefactor/"> <img src="./docs/imgs/html.png" alt="HTML Insignia"> </a>
+                        </div>
 
-                    <!-- JBE: Just CSS -->
-                    <div>
-                        <h3><Just CSS/h3>
-                        <p>Pure css practice</p>
-                        <img src="./docs/imgs/css.png" alt="CSS Insignia">
-                    </div>
+                        <!-- JBE: Just CSS -->
+                        <div class="item">
+                            <h3>Just CSS</h3>
+                            <p>Pure css practice</p>
+                            <a href=""> <img src="./docs/imgs/css.png" alt="CSS Insignia"> </a>
+                        </div>
 
-                    <!-- JBE:JavaScript Experiments -->
-                    <div>
-                        <h3>JavaScript Experiments</h3>
-                        <p>Adding cool functions!</p>
-                        <img src="./docs/imgs/js.png" alt="JS Insignia">
-                    </div>
-                    
-                    <!-- JBE: Base API's -->
-                    <div>
-                        <h3>Base API's</h3>
-                        <p>Manipulating DOM</p>
-                        <img src="./docs/imgs/api.jpeg" alt="API Insignia">
-                    </div>
-                    
-                    <!-- JBE: Mini Projects section  -->
-                    <div>
-                        <h3>Mini Projects</h3>
-                        <p>Pending</p>
-                        <img src="./docs/imgs/mini.webp" alt="">
-                    </div>
-
-                    <div>
-
-                    </div>
-                </section>
+                        <!-- JBE:JavaScript Experiments -->
+                        <div class="item">
+                            <h3>JavaScript</h3>
+                            <p>Cool functions!</p>
+                            <a href="">  <img src="./docs/imgs/js.png" alt="JS Insignia">  </a>
+                        </div>
+                        
+                        <!-- JBE: Base API's -->
+                        <div class="item">
+                            <h3>Base API's</h3>
+                            <p>Manipulate DOM</p>
+                            <a href=""> <img src="./docs/imgs/api.jpeg" alt="API Insignia"> </a>
+                        </div>
+                    </section>
+                </div>
             </section>
-        </body>
+            <!-- JBE: Base for miniprojects -->
+            <section id="miniprojects">
+                <!-- JBE: left side section -->
+               <div class="titleAbout">
+                   <h2>Mini Projects!</h2>
+               </div>
+               <!-- JBE: right side section -->
+               <div class="titlePar">
+                <p>Pending, Here you will find mini-projects that had helped me practice</p>
+                <img src="./docs/imgs/mini.webp" alt="coding img" id="miniImg">
+               </div>
+           </section>
+
+
+        </main>
 
         <!-- JBE:Resume linke for more information about Socials -->
-        <footer>
+        <footer id="footer">
             <h3>Contact Me!</h3>
             <ul>
-                <li><a href="">LinkedIn</a></li>
-                <li><a href="">GitHub</a></li>
-                <li><a href="">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/jorgebesnierb/">LinkedIn</a></li>
+                <li><a href="https://github.com/JorgeBesnierB">GitHub</a></li>
+                <li><a href="mailto:jorgebesnierb@outlook.com">Email</a></li>
             </ul>
         </footer>
     </body>
